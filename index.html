@@ -75,7 +75,7 @@
                 <ul class="trend-card__tags">
                   <li class="trend-card__tag"><a href="#">Образ жизни</a></li>
                 </ul>
-                <h3 class="trend-card__title"><a href="#">10 вещей, которые стоит попробовать на закате</a></h3>
+                <h3 class="trend-card__title">10 вещей, которые стоит попробовать на закате</h3>
               </div>
             </article>
           </li>
@@ -89,7 +89,7 @@
                 <ul class="trend-card__tags">
                   <li class="trend-card__tag"><a href="#">Спорт</a></li>
                 </ul>
-                <h3 class="trend-card__title"><a href="#">Серфинг для начинающих: советы и маршруты</a></h3>
+                <h3 class="trend-card__title">Серфинг для начинающих: советы и маршруты</h3>
               </div>
             </article>
           </li>
@@ -103,7 +103,7 @@
                 <ul class="trend-card__tags">
                   <li class="trend-card__tag"><a href="#">Творчество</a></li>
                 </ul>
-                <h3 class="trend-card__title"><a href="#">Современное и близкое: новый взгляд на дом</a></h3>
+                <h3 class="trend-card__title">Современное и близкое: новый взгляд на дом</h3>
               </div>
             </article>
           </li>
@@ -117,7 +117,7 @@
                 <ul class="trend-card__tags">
                   <li class="trend-card__tag"><a href="#">Образ жизни</a></li>
                 </ul>
-                <h3 class="trend-card__title"><a href="#">Лучшие музыкальные фестивали этого лета</a></h3>
+                <h3 class="trend-card__title">Лучшие музыкальные фестивали этого лета</h3>
               </div>
             </article>
           </li>
@@ -280,21 +280,21 @@
 
           <div class="sidebar__block">
             <h3 class="sidebar__title">Поиск</h3>
-            <div class="search">
-              <input class="search__input" type="text" placeholder="Поиск...">
-              <button class="search__button" type="button" aria-label="Найти">
+            <form class="search" action="#" method="get">
+              <input class="search__input" type="text" name="query" placeholder="Поиск...">
+              <button class="search__button" type="submit" aria-label="Найти">
                 <img src="svg/search.svg" alt="Найти">
               </button>
-            </div>
+            </form>
           </div>
 
           <div class="sidebar__block">
             <h3 class="sidebar__title">Рассылка</h3>
             <p class="subscribe__text">Подпишитесь на нашу рассылку и получайте свежие материалы каждую неделю</p>
-            <div class="subscribe">
-              <input class="subscribe__input" type="email" placeholder="Ваш email">
-              <button class="subscribe__button" type="button">Подписаться</button>
-            </div>
+            <form class="subscribe" action="#" method="post">
+              <input class="subscribe__input" type="email" name="email" placeholder="Ваш email">
+              <button class="subscribe__button" type="submit">Подписаться</button>
+            </form>
           </div>
 
           <div class="sidebar__block">
@@ -434,10 +434,10 @@
         <img src="svg/form-x.svg" alt="Закрыть">
       </button>
       <h2 class="popup__title">Вид подачи</h2>
-      <div class="popup__form">
-        <input class="popup__input" type="email" placeholder="Ваш email">
-        <button class="popup__button" type="button">Подписаться</button>
-      </div>
+      <form class="popup__form" action="#" method="post">
+        <input class="popup__input" type="email" name="email" placeholder="Ваш email">
+        <button class="popup__button" type="submit">Подписаться</button>
+      </form>
     </div>
   </div>
 
